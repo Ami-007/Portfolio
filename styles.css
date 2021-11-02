@@ -4,15 +4,52 @@
     box-sizing: border-box;
 }
 
-body {
-    background-image: 
+.text {
+  width: 100%; 
+  text-align: center; 
+  border-bottom: 1px solid rgb(134, 127, 127); 
+  line-height: 0.1em;
+  margin: 10px 0 20px; 
+} 
+
+.pageline { 
+   background:#fff; 
+   padding:0 10px; 
 }
 
-/* p {
+.logo {
     font-family: Swanky and Moo Moo;
     font-size: 40px;
 }
-*/
+
+.portfolio-tiles {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  justify-content: center;
+  align-content: center;
+  border: 1px solid black;
+  height: 100%;
+  width: 100%;
+  /* padding: 20px; */
+}
+.portfolio-tiles > .project > #tile {
+  border-radius: 20px;
+  position: relative;
+  background-color: rgb(235, 229, 229);
+  border: 2px solid grey;
+  margin: 40px;
+  height: 400px;
+  width: 300px;
+}
+
+.portfolio-tiles > .project > #tile > h3 {
+  
+}
+.portfolio-tiles > .project > #tile:hover {
+  cursor:pointer;
+  box-shadow: 0 8px 16px rgba(62, 39, 194, 0.486);
+}
 
 /* body{background-color:#000; overflow:hidden;}
 
