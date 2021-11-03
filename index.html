@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Swanky+and+Moo+Moo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <title> Portfolio</title>
 </head>
 
@@ -18,7 +21,7 @@
     </header>
 
     <div class="info">
-        <img src="./Ami B&W.jpeg" alt="me">
+        <img src="./Images/Untitled design-2.png" alt="me" class="mebw">
         <h2>Ami Fletcher</h2>
         <h3> Junior Software Developer</h3>
     </div>
@@ -46,7 +49,7 @@
 
 
     <!-- pictures of me doing interesting stuff I guess -->
-    <img src="Collage.png" alt="collage images of me">
+    <img src="./Images/Collage.png" alt="collage images of me">
 
     <!-- more interesting and descriptive text of me -->
     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quas sequi quam beatae qui veniam architecto
@@ -95,19 +98,74 @@
     </div>
 
     <!-- scroll stuff here when I find it -->
+    <a class=" scoll-link-arrow"></a>
 
     <!-- line bar -->
     <h4 class="text"> <span class="pageline"> SKILLS </span> </h4>
 
     <!-- my skills text -->
-    <!-- skills icons -->
-
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem delectus facilis laudantium tenetur quod
+        pariatur harum corrupti sapiente, debitis repellendus necessitatibus quos aut nostrum aliquid voluptatum velit
+        esse tempore eveniet animi magni perspiciatis nisi reiciendis. Numquam porro quod veritatis laboriosam, ratione
+        saepe error quam, assumenda, ipsam cumque nesciunt temporibus perferendis beatae necessitatibus earum neque
+        similique culpa. Commodi ducimus, itaque at laborum quos error magnam dicta quasi aspernatur ipsa voluptatem ea
+        explicabo consequuntur, delectus tempore ullam distinctio doloribus ex eius praesentium ad impedit facere!
+        Facilis quia asperiores, corporis libero, sint molestiae voluptates nisi animi dolor pariatur eligendi nulla
+        possimus sit rem eveniet, dicta amet consectetur saepe accusamus porro! Cum recusandae odio officiis minima
+        asperiores unde ab totam eaque vel, omnis quod dolores nostrum perspiciatis accusantium neque?</p>
+    
+        <!-- skills icons -->
+    <div class="skills-icons">
+        <i class="fa-brands fa-git-square"></i>
+        <i class="fa-brands fa-css3-alt"></i>
+        <i class="fa-brands fa-sass"></i>
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-brands fa-html5"></i>
+        <i class="fa-brands fa-js-square"></i>
+        
+    </div>
+      
     <!-- scroll stuff here when I find it -->
 
     <!-- line bar -->
     <h4 class="text"> <span class="pageline"> CONTACT </span> </h4>
 
     <!-- contactable icons with links!!!!!!!!!-->
+    
+<div class="contact-icons">
+    <i class="fa-brands fa-linkedin"></i>
+    <i class="fa-solid fa-envelope"></i>
+    <i class="fa-brands fa-github"></i>
+</div>
+
+
+<!-- contact form here-->
+<main>
+    <form class="contact-form" onsubmit="return submitMessage(event);">
+
+      <label for="fullName"> Full Name: </label>
+      <input type="text" name="fullName" id="fullName" required>
+
+      <label for="email"> Email: </label>
+      <input type="text" name="email" id="email" required>
+
+      <label for="reason"> Reason: </label>
+      <select name="reason" id="reason">
+        <option value="Reason">Getting in touch</option>
+        <option value="feedback">Feedback</option>
+        <option value="event">Further</option>
+      </select>
+      
+      
+      <label for="message">Message:</label>
+       <textarea name="message" id="message" rows="3" cols="20" placeholder="Leave your message here"
+      required></textarea>
+
+      <input type="reset">
+      <input type="submit">
+
+    </form>
+  </main>
 
     <!-- scroll stuff here when I find it to go back to top -->
 
