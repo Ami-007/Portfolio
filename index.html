@@ -20,9 +20,9 @@
         <p class="logo"> AmiF </p>
     </header>
 
-    <section id="page1" class="page">
-        <div class="info">
-            <img src="./Images/Untitled design-2.png" alt="me" class="Ami">
+    <section id="home" class="page">
+        <div class="home__hero">
+            <img src="./Images/Untitled design-2.png" alt="me" class="home__hero__image">
             <h2>Ami Fletcher</h2>
             <h3> Junior Software Developer</h3>
         </div>
@@ -37,16 +37,17 @@
         </nav>
 
         <!-- scroll stuff here when I find it -->
-        <a class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></a>
-    
+        <a class="scroll-down-arrow" iconfont="ETmodules" data-ca3_icon=""></a>
     </section>
 
-    <section id="page2" class="page">
+    <section id="aboutMe" class="page about-me">
         <!-- line bar -->
-        <h4 class="text"><span class="pageline"> ABOUT ME </span></h4>
+        <h4 class="page__title"><span class="page__line"> ABOUT ME </span></h4>
 
         <!-- interesting text about me -->
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quas sequi quam beatae qui veniam
+        <div class="about-me__info">
+
+            <p class="about-me__info__para1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quas sequi quam beatae qui veniam
             architecto
             cumque vitae earum blanditiis in quo quod error voluptatem dolor? Alias sed numquam exercitationem
             laudantium,
@@ -54,53 +55,53 @@
             necessitatibus suscipit.</p>
 
 
-        <!-- pictures of me doing interesting stuff I guess -->
-        <img src="./Images/Collage.png" alt="collage images of me">
+            <!-- pictures of me doing interesting stuff I guess -->
+            <img src="./Images/Ami Collage.png" alt="collage images of me" class="about-me__info__image">
 
-        <!-- more interesting and descriptive text of me -->
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quas sequi quam beatae qui veniam
+            <!-- more interesting and descriptive text of me -->
+            <p class="about-me__info__para2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quas sequi quam beatae qui veniam
             architecto
             cumque vitae earum blanditiis in quo quod error voluptatem dolor? Alias sed numquam exercitationem
             laudantium,
             illo tempore rerum sit ullam iure, minus possimus veritatis at eligendi id nisi totam! Eveniet natus quo
             necessitatibus suscipit.
-        </p>
+            </p>
 
-        <!-- scroll stuff here when I find it -->
+            <!-- scroll stuff here when I find it -->
     </section>
 
-    <section id="page3" class="page">
+    <section id="portfolio" class="page myPortfolio">
         <!-- line bar -->
-        <h4 class="text"> <span class="pageline"> MY PORTFOLIO </span> </h4>
+        <h4 class="page__title"> <span class="page__line"> MY PORTFOLIO </span> </h4>
 
         <!-- portfolio boxes -->
-        <div class="portfolio-tiles">
-            <a class="project" rel="">
+        <div class="myPortfolio__tiles">
+            <a class="myPortfolio__project" rel="">
                 <div id="tile" class="project1">
                     <h3> Project1 </h3>
                 </div>
             </a>
-            <a class="project" rel="">
+            <a class="myPortfolio__project" rel="">
                 <div id="tile" class="project2">
                     <h3> Project 2 </h3>
                 </div>
             </a>
-            <a class="project" rel="">
+            <a class="myPortfolio__project" rel="">
                 <div id="tile" class="project3">
                     <h3> Project 3 </h3>
                 </div>
             </a>
-            <a class="project" rel="">
+            <a class="myPortfolio__project" rel="">
                 <div id="tile" class="project4">
                     <h3> Project 4 </h3>
                 </div>
             </a>
-            <a class="project" rel="">
+            <a class="myPortfolio__project" rel="">
                 <div id="tile" class="project5">
                     <h3> Project 5 </h3>
                 </div>
             </a>
-            <a class="project" rel="">
+            <a class="myPortfolio__project" rel="">
                 <div id="tile" class="project6">
                     <h3> Project 6 </h3>
                 </div>
@@ -110,9 +111,9 @@
         <!-- scroll stuff here when I find it -->
         <a class=" scoll-link-arrow"></a>
     </section>
-    <section id="page4" class="page">
+    <section id="skills" class="page">
         <!-- line bar -->
-        <h4 class="text"> <span class="pageline"> SKILLS </span> </h4>
+        <h4 class="page__title"> <span class="page__line"> SKILLS </span> </h4>
 
         <!-- my skills text -->
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem delectus facilis laudantium tenetur quod
@@ -129,7 +130,7 @@
             asperiores unde ab totam eaque vel, omnis quod dolores nostrum perspiciatis accusantium neque?</p>
 
         <!-- skills icons -->
-        <div class="skills-icons">
+        <div class="skills__icons">
 
             <i class="fa-brands fa-git-square"></i>
             <i class="fa-brands fa-css3-alt"></i>
@@ -143,13 +144,13 @@
         <!-- scroll stuff here when I find it -->
     </section>
 
-    <section id="page5" class="page">
+    <section id="contact" class="page">
         <!-- line bar -->
-        <h4 class="text"> <span class="pageline"> CONTACT </span> </h4>
+        <h4 class="page__title"> <span class="page__line"> CONTACT </span> </h4>
 
         <!-- contactable icons with links!!!!!!!!!-->
 
-        <div class="contact-icons">
+        <div class="contact__icons">
 
             <i class="fa-brands fa-linkedin"></i>
             <i class="fa-solid fa-envelope"></i>
