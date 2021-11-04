@@ -47,24 +47,26 @@
         <!-- interesting text about me -->
         <div class="about-me__info">
 
-            <p class="about-me__info__para1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quas sequi quam beatae qui veniam
-            architecto
-            cumque vitae earum blanditiis in quo quod error voluptatem dolor? Alias sed numquam exercitationem
-            laudantium,
-            illo tempore rerum sit ullam iure, minus possimus veritatis at eligendi id nisi totam! Eveniet natus quo
-            necessitatibus suscipit.</p>
+            <p class="about-me__info__para1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quas
+                sequi quam beatae qui veniam
+                architecto
+                cumque vitae earum blanditiis in quo quod error voluptatem dolor? Alias sed numquam exercitationem
+                laudantium,
+                illo tempore rerum sit ullam iure, minus possimus veritatis at eligendi id nisi totam! Eveniet natus quo
+                necessitatibus suscipit.</p>
 
 
             <!-- pictures of me doing interesting stuff I guess -->
             <img src="./Images/Ami Collage.png" alt="collage images of me" class="about-me__info__image">
 
             <!-- more interesting and descriptive text of me -->
-            <p class="about-me__info__para2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quas sequi quam beatae qui veniam
-            architecto
-            cumque vitae earum blanditiis in quo quod error voluptatem dolor? Alias sed numquam exercitationem
-            laudantium,
-            illo tempore rerum sit ullam iure, minus possimus veritatis at eligendi id nisi totam! Eveniet natus quo
-            necessitatibus suscipit.
+            <p class="about-me__info__para2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quas
+                sequi quam beatae qui veniam
+                architecto
+                cumque vitae earum blanditiis in quo quod error voluptatem dolor? Alias sed numquam exercitationem
+                laudantium,
+                illo tempore rerum sit ullam iure, minus possimus veritatis at eligendi id nisi totam! Eveniet natus quo
+                necessitatibus suscipit.
             </p>
 
             <!-- scroll stuff here when I find it -->
@@ -144,7 +146,7 @@
         <!-- scroll stuff here when I find it -->
     </section>
 
-    <section id="contact" class="page">
+    <section id="contact" class="page contactMe">
         <!-- line bar -->
         <h4 class="page__title"> <span class="page__line"> CONTACT </span> </h4>
 
@@ -160,8 +162,9 @@
 
 
         <!-- contact form here-->
-        <main>
-            <form class="contact-form" onsubmit="return submitMessage(event);">
+
+        <div class="contactMe__wrapper">
+            <form class="contactMe__wrapper__contact-form" onsubmit="return submitMessage(event);">
 
                 <label for="fullName"> Full Name: </label>
                 <input type="text" name="fullName" id="fullName" required>
@@ -185,7 +188,7 @@
                 <input type="submit">
 
             </form>
-        </main>
+        </div>
 
         <!-- scroll stuff here when I find it to go back to top -->
     </section>

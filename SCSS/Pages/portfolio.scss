@@ -1,0 +1,15 @@
+.myPortfolio__tiles > .myPortfolio__project > .tile {
+    border-radius: 20px;
+    position: relative;
+    background-color: rgb(235, 229, 229);
+    border: 2px solid grey;
+    margin: 40px;
+    height: 400px;
+    width: 300px;
+    }
+    
+    .myPortfolio__tiles > .myPortfolio__project  > .tile:hover {
+    cursor:pointer;
+    box-shadow: 0 8px 16px rgba(62, 39, 194, 0.486);
+    }
+    

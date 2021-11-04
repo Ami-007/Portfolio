@@ -1,0 +1,12 @@
+.home__hero {
+    height: 62%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &__image {
+        height: 75%;
+        margin-bottom: 25px;
+    }
+}

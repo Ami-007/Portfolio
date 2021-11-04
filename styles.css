@@ -1,30 +1,24 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: rgb(255, 255, 236);
+footer {
+  margin-top: 50px;
 }
 
-
-.page {
-  height: 100vh;
-  width: 100vw;
+.contactMe__wrapper {
+  display: flex;
+  justify-content: center;
+}
+.contactMe__wrapper__contact-form {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 20px;
+  font-weight: bold;
 }
 
-.page__title {
-width: 100%; 
-text-align: center; 
-border-bottom: 1px solid rgb(134, 127, 127); 
-line-height: 0.1em;
-margin: 10px 0 20px; 
-} 
-
-.page__line {  
- padding: 10px; 
-}
-
-header {
-  height: 40px;
+.myPortfolio__tiles {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  justify-content: center;
+  align-content: center;
 }
 
 .about-me__info {
@@ -38,21 +32,18 @@ header {
   height: 80%;
   width: 100%;
 }
-
 .about-me__info__para1 {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 1;
 }
-
 .about-me__info__image {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 2;
 }
-
 .about-me__info__para2 {
   grid-column-start: 3;
   grid-column-end: 4;
@@ -60,65 +51,21 @@ header {
   grid-row-end: 3;
 }
 
+header {
+  height: 40px;
+}
+
 .logo {
-  font-family: Swanky and Moo Moo;
+  font-family: "Swanky and Moo Moo", sans-serif;
   font-size: 40px;
   margin-left: 10px;
 }
 
-.home__hero__image {
-  height: 75%;
-  margin-bottom: 25px;
-}
-
-.skills__icons {
-  font-size: 80px;
-  color:rgb(70, 66, 66)
-}
-
-.contact__icons {
-  font-size: 100px;
-  color:rgb(70, 66, 66)
-}
-
-.myPortfolio__tiles {
-display: grid;
-grid-template-columns: auto auto auto;
-grid-template-rows: auto auto;
-justify-content: center;
-align-content: center;
-}
-
-
-.myPortfolio__tiles > .myPortfolio__project > #tile {
-border-radius: 20px;
-position: relative;
-background-color: rgb(235, 229, 229);
-border: 2px solid grey;
-margin: 40px;
-height: 400px;
-width: 300px;
-}
-
-.myPortfolio__tiles > .myPortfolio__project  > #tile:hover {
-cursor:pointer;
-box-shadow: 0 8px 16px rgba(62, 39, 194, 0.486);
-}
-
-.home__hero {
-    height: 62%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
 nav {
-    height: 50px;
-    width: 100%;
+  height: 50px;
+  width: 100%;
 }
-
-nav > ul {
+nav ul {
   display: flex;
   justify-content: space-evenly;
   padding: 15px;
@@ -126,33 +73,63 @@ nav > ul {
   font-size: 30px;
 }
 
-main {
-  display: flex;
-  justify-content: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ffffec;
 }
 
-main > .contact-form {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-gap: 20px;
+.page {
+  height: 100vh;
+  width: 100vw;
 }
-
-.contact-form {
-  font-weight: bold;
-}
-
-footer {
-  margin-top: 50px;
-}
-
-.form-wrapper {
-  display: flex;
-  justify-content: center;
-}
-
-.form-title-section {
+.page__title {
+  width: 100%;
   text-align: center;
-  margin-bottom: 40px;
+  border-bottom: 1px solid #867f7f;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+}
+.page__line {
+  padding: 10px;
+}
+
+.contact__icons {
+  font-size: 100px;
+  color: #464242;
+}
+
+.home__hero {
+  height: 62%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.home__hero__image {
+  height: 75%;
+  margin-bottom: 25px;
+}
+
+.myPortfolio__tiles > .myPortfolio__project > .tile {
+  border-radius: 20px;
+  position: relative;
+  background-color: #ebe5e5;
+  border: 2px solid grey;
+  margin: 40px;
+  height: 400px;
+  width: 300px;
+}
+
+.myPortfolio__tiles > .myPortfolio__project > .tile:hover {
+  cursor: pointer;
+  box-shadow: 0 8px 16px rgba(62, 39, 194, 0.486);
+}
+
+.skills__icons {
+  font-size: 80px;
+  color: #464242;
 }
 
 /* body{background-color:#000; overflow:hidden;}
@@ -203,4 +180,4 @@ animated scroll arrow animation
 0%   { transform:translate(0,-20px); opacity: 0;  }
 50%  { opacity: 1;  }
 100% { transform:translate(0,20px); opacity: 0; }
-}
+}*/
