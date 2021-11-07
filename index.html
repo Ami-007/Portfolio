@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Swanky+and+Moo+Moo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -29,10 +30,10 @@
 
         <nav>
             <ul>
-                <li> about me </li>
-                <li> skills </li>
-                <li> portfolio </li>
-                <li> contact </li>
+                <a href="#aboutMe">about me</a>
+                <a href="#skills">skills</a>
+                <a href="#portfolio">portfolio</a>
+                <a href="#contact">contact</a>
             </ul>
         </nav>
 
@@ -68,44 +69,63 @@
                 illo tempore rerum sit ullam iure, minus possimus veritatis at eligendi id nisi totam! Eveniet natus quo
                 necessitatibus suscipit.
             </p>
+        </div>
 
-            <!-- scroll stuff here when I find it -->
+        <!-- scroll stuff here when I find it -->
     </section>
 
     <section id="portfolio" class="page myPortfolio">
         <!-- line bar -->
-        <h4 class="page__title"> <span class="page__line"> MY PORTFOLIO </span> </h4>
+        <h4 class="page__title"><span class="page__line"> MY PORTFOLIO </span></h4>
 
         <!-- portfolio boxes -->
-        <div class="myPortfolio__tiles">
-            <a class="myPortfolio__project" rel="">
-                <div id="tile" class="project1">
+        <div class="myPortfolio__container">
+            <a class="myPortfolio__container__tiles" rel="">
+                <div id="project1" class="myPortfolio__container__tiles__tile">
+                    <img src="./Images/Placeholder.jpeg" alt="project image"
+                        class="myPortfolio__container__tiles__tile__image">
                     <h3> Project1 </h3>
+                    <p>Project info here</p>
                 </div>
             </a>
-            <a class="myPortfolio__project" rel="">
-                <div id="tile" class="project2">
+            <a class="myPortfolio__container__tiles" rel="">
+                <div id="project2" class="myPortfolio__container__tiles__tile">
+                    <img src="./Images/Placeholder.jpeg" alt="project image"
+                        class="myPortfolio__container__tiles__tile__image">
                     <h3> Project 2 </h3>
+                    <p>Project info here</p>
                 </div>
             </a>
-            <a class="myPortfolio__project" rel="">
-                <div id="tile" class="project3">
+            <a class="myPortfolio__container__tiles" rel="">
+                <div id="project3" class="myPortfolio__container__tiles__tile">
+                    <img src="./Images/Placeholder.jpeg" alt="project image"
+                        class="myPortfolio__container__tiles__tile__image">
                     <h3> Project 3 </h3>
+                    <p>Project info here</p>
                 </div>
             </a>
-            <a class="myPortfolio__project" rel="">
-                <div id="tile" class="project4">
+            <a class="myPortfolio__container__tiles" rel="">
+                <div id="project4" class="myPortfolio__container__tiles__tile">
+                    <img src="./Images/Placeholder.jpeg" alt="project image"
+                        class="myPortfolio__container__tiles__tile__image">
                     <h3> Project 4 </h3>
+                    <p>Project info here</p>
                 </div>
             </a>
-            <a class="myPortfolio__project" rel="">
-                <div id="tile" class="project5">
+            <a class="myPortfolio__container__tiles" rel="">
+                <div id="project5" class="myPortfolio__container__tiles__tile">
+                    <img src="./Images/Placeholder.jpeg" alt="project image"
+                        class="myPortfolio__container__tiles__tile__image">
                     <h3> Project 5 </h3>
+                    <p>Project info here</p>
                 </div>
             </a>
-            <a class="myPortfolio__project" rel="">
-                <div id="tile" class="project6">
+            <a class="myPortfolio__container__tiles" rel="">
+                <div id="project6" class="myPortfolio__container__tiles__tile">
+                    <img src="./Images/Placeholder.jpeg" alt="project image"
+                        class="myPortfolio__container__tiles__tile__image">
                     <h3> Project 6 </h3>
+                    <p>Project info here</p>
                 </div>
             </a>
         </div>
@@ -113,11 +133,13 @@
         <!-- scroll stuff here when I find it -->
         <a class=" scoll-link-arrow"></a>
     </section>
+
     <section id="skills" class="page">
         <!-- line bar -->
         <h4 class="page__title"> <span class="page__line"> SKILLS </span> </h4>
 
         <!-- my skills text -->
+        <br>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem delectus facilis laudantium tenetur quod
             pariatur harum corrupti sapiente, debitis repellendus necessitatibus quos aut nostrum aliquid voluptatum
             velit
@@ -131,8 +153,10 @@
             possimus sit rem eveniet, dicta amet consectetur saepe accusamus porro! Cum recusandae odio officiis minima
             asperiores unde ab totam eaque vel, omnis quod dolores nostrum perspiciatis accusantium neque?</p>
 
+            <br>
+
         <!-- skills icons -->
-        <div class="skills__icons">
+        <div class="page__skillIcons">
 
             <i class="fa-brands fa-git-square"></i>
             <i class="fa-brands fa-css3-alt"></i>
@@ -174,9 +198,9 @@
 
                 <label for="reason"> Reason: </label>
                 <select name="reason" id="reason">
-                    <option value="Reason">Getting in touch</option>
+                    <option value="inTouch">Getting in touch</option>
                     <option value="feedback">Feedback</option>
-                    <option value="event">Further</option>
+                    <option value="information">Further information</option>
                 </select>
 
 

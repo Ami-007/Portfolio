@@ -6,7 +6,11 @@ nav {
     display: flex;
     justify-content: space-evenly;
     padding: 15px;
-    list-style-type: none;
-    font-size: 30px;
   }
+    a {
+      list-style-type: none;
+      font-size: 30px;
+      color: $secondary-color;
+      text-decoration: none;
+    }
 }
