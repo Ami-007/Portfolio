@@ -21,7 +21,7 @@
         <p class="logo"> AmiF </p>
     </header>
 
-    <section id="home" class="page">
+    <section id="home" class="page home">
         <div class="home__hero">
             <img src="./Images/Untitled design-2.png" alt="me" class="home__hero__image">
             <h2>Ami Fletcher</h2>
@@ -42,10 +42,10 @@
     </section>
 
     <section id="aboutMe" class="page about-me">
-        <!-- line bar -->
+
         <h4 class="page__title"><span class="page__line"> ABOUT ME </span></h4>
 
-        <!-- interesting text about me -->
+
         <div class="about-me__info">
 
             <p class="about-me__info__para1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quas
@@ -57,7 +57,7 @@
                 necessitatibus suscipit.</p>
 
 
-            <!-- pictures of me doing interesting stuff I guess -->
+
             <img src="./Images/Ami Collage.png" alt="collage images of me" class="about-me__info__image">
 
             <!-- more interesting and descriptive text of me -->
@@ -75,10 +75,10 @@
     </section>
 
     <section id="portfolio" class="page myPortfolio">
-        <!-- line bar -->
+
         <h4 class="page__title"><span class="page__line"> MY PORTFOLIO </span></h4>
 
-        <!-- portfolio boxes -->
+
         <div class="myPortfolio__container">
             <a class="myPortfolio__container__tiles" rel="">
                 <div id="project1" class="myPortfolio__container__tiles__tile">
@@ -131,14 +131,13 @@
         </div>
 
         <!-- scroll stuff here when I find it -->
-        <a class=" scoll-link-arrow"></a>
+        <a class="myPortfolio__scoll arrow"></a>
     </section>
 
-    <section id="skills" class="page">
-        <!-- line bar -->
+    <section id="skills" class="page skills">
+
         <h4 class="page__title"> <span class="page__line"> SKILLS </span> </h4>
 
-        <!-- my skills text -->
         <br>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem delectus facilis laudantium tenetur quod
             pariatur harum corrupti sapiente, debitis repellendus necessitatibus quos aut nostrum aliquid voluptatum
@@ -153,10 +152,9 @@
             possimus sit rem eveniet, dicta amet consectetur saepe accusamus porro! Cum recusandae odio officiis minima
             asperiores unde ab totam eaque vel, omnis quod dolores nostrum perspiciatis accusantium neque?</p>
 
-            <br>
+        <br>
 
-        <!-- skills icons -->
-        <div class="page__skillIcons">
+        <div class="skills__skillIcons">
 
             <i class="fa-brands fa-git-square"></i>
             <i class="fa-brands fa-css3-alt"></i>
@@ -174,44 +172,42 @@
         <!-- line bar -->
         <h4 class="page__title"> <span class="page__line"> CONTACT </span> </h4>
 
-        <!-- contactable icons with links!!!!!!!!!-->
 
-        <div class="contact__icons">
+        <div class="contactMe__grid">
+            <div class="contactMe__grid__icons">
 
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-solid fa-envelope"></i>
-            <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-solid fa-envelope"></i>
+                <i class="fa-brands fa-github"></i>
 
-        </div>
+            </div>
 
+            <div class="contactMe__grid__form-wrapper">
+                <form class="contactMe__grid__form-wrapper__form" onsubmit="return submitMessage(event);">
 
-        <!-- contact form here-->
+                    <label for="fullName"> Full Name: </label>
+                    <input type="text" name="fullName" id="fullName" required>
 
-        <div class="contactMe__wrapper">
-            <form class="contactMe__wrapper__contact-form" onsubmit="return submitMessage(event);">
+                    <label for="email"> Email: </label>
+                    <input type="text" name="email" id="email" required>
 
-                <label for="fullName"> Full Name: </label>
-                <input type="text" name="fullName" id="fullName" required>
-
-                <label for="email"> Email: </label>
-                <input type="text" name="email" id="email" required>
-
-                <label for="reason"> Reason: </label>
-                <select name="reason" id="reason">
-                    <option value="inTouch">Getting in touch</option>
-                    <option value="feedback">Feedback</option>
-                    <option value="information">Further information</option>
-                </select>
+                    <label for="reason"> Reason: </label>
+                    <select name="reason" id="reason">
+                        <option value="inTouch">Getting in touch</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="information">Further information</option>
+                    </select>
 
 
-                <label for="message">Message:</label>
-                <textarea name="message" id="message" rows="3" cols="20" placeholder="Leave your message here"
-                    required></textarea>
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" rows="3" cols="20" placeholder="Leave your message here"
+                        required></textarea>
 
-                <input type="reset">
-                <input type="submit">
+                    <input type="reset">
+                    <input type="submit">
 
-            </form>
+                </form>
+            </div>
         </div>
 
         <!-- scroll stuff here when I find it to go back to top -->
